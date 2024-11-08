@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Compensa.Comparar"
+             Title="Comparar Preços">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+            <Label Text="Digite o preço do Etanol:" />
+            <Entry x:Name="txt_etanol" Placeholder="Preço do Etanol" Keyboard="Numeric" />
+
+            <Label Text="Digite o preço da Gasolina:" />
+            <Entry x:Name="txt_gasolina" Placeholder="Preço da Gasolina" Keyboard="Numeric" />
+
+            <Button Text="Calcular" Clicked="Button_Clicked" />
+            <Button Text="Voltar" Clicked="VoltarButton_Clicked" />
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
